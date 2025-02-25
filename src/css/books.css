@@ -1,0 +1,176 @@
+.books-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 0 auto;
+}
+
+.main-list {
+  padding-left: 65px;
+}
+
+.main-list__item,
+.main-list__item_active {
+  list-style: none;
+  width: 416px;
+  padding-bottom: 23px;
+}
+
+.main-list__item > a,
+.main-list__item_active > a {
+  text-decoration: none;
+  width: 82px;
+  height: 15px;
+}
+.main-list__item > a {
+  color: #5c6a79;
+}
+
+.main-list__item_active > a {
+  color: #1c2a39;
+}
+
+.main-list__item_active::marker {
+  color: #756ad3;
+  font-size: 18px;
+}
+.main-list__item_active {
+  list-style-type: disc;
+}
+
+.cards-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cards_item {
+  display: flex;
+  z-index: 2;
+  max-width: 424px;
+  height: 300px;
+  gap: 36px;
+  padding-bottom: 96px;
+}
+
+.card_img {
+  width: 212px;
+  height: 300px;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card_info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #5c6a79;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.info_title {
+  font-size: 18px;
+  color: #1c2a39;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.info_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 176px;
+  max-height: 38px;
+}
+
+.info_btn,
+.load_btn,
+.button-container__load {
+  text-transform: uppercase;
+  color: #4c3db2;
+  border: 2px solid #4c3db2;
+  font-weight: 700;
+  font-size: 12px;
+  width: 176px;
+  height: 45px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.info_btn {
+  margin-top: 16px;
+}
+
+.added {
+  opacity: 0.6;
+  border: 2px solid #5c6a79;
+  color: #5c6a79;
+}
+
+.raiting_star {
+  width: 16px;
+  height: 16px;
+}
+
+.info_raiting {
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+}
+
+.info_cost {
+  color: #1c2a39;
+  font-weight: 700;
+  font-size: 16px;
+}
+.load_btn {
+  display: block;
+  margin: 90px auto;
+}
+
+.button-container {
+  padding-left: 741px;
+}
+
+@media (max-width: 768px) {
+  .info_btn,
+  .load_btn,
+  .button-container__load {
+    width: 120px;
+    height: 35px;
+  }
+
+  .books-container {
+    grid-template-columns: 1fr;
+  }
+
+  .main-list {
+    padding-left: 5px;
+  }
+
+  .main-list__item,
+  .main-list__item_active {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .cards-block {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+  }
+
+  .cards_item {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+
+  .card_img {
+    width: 50%;
+    height: auto;
+  }
+
+  .button-container {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+import cartJS from "./src/js/cart.js";
+import booksJS from "./src/js/books.js";
+import sliderJS from "./src/js/slider.js";
+import localStroge from "./src/js/localStorage.js";
+import Html from "./index.html";
+import "./src/css/books.css";
+import "./src/css/font.css";
+import "./src/css/header.css";
+import "./src/css/slider.css";
+import './src/scss/main.scss';

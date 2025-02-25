@@ -1,0 +1,86 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  title BOOKSHOP
+header.header
+  .header-container
+    .header-container__logo
+      p.header-container__logo Bookshop
+    .header-container__navigation
+      nav.container-navigation
+        ul.container-navigation
+          li.container-navigation__links_active
+            a(href='#') BOOKS
+          li.container-navigation__links
+            a(href='#') AUDIOBOOKS
+          li.container-navigation__links
+            a(href='#') STATIONERY &amp; GIFTS
+          li.container-navigation__links
+            a(href='#') BLOG
+    .header-container__icon
+      a(href='#')
+        img(src='./src/img/user.svg' alt='Личный кабинет' width='12' height='15')
+      a(href='#')
+        img(src='./src/img/search.svg' alt='Поиск' width='15' height='15')
+      a(href='#')
+        img(src='./src/img/shop bag.svg' alt='Корзина с покупками' width='14' height='17')
+        span.cart-counter
+main.main
+  section.slider
+    .slider-container
+      .slider-images
+      .slider-poster
+        a(href='#')
+          img(src='./src/img/promo 1.png' alt='Change \
+          old book \
+          on new' width='149' height='204')
+      .slider-top
+        a(href='#')
+          img(src='./src/img/promo 2.png' alt='top\
+          100\
+          books\
+          2022' width='137' height='273px')
+      .slider-dots
+  section.books-container
+    .main-list
+      nav.main-list
+        ul.main-list__items
+          li.main-list__item(data-category='Architecture')
+            a(href='#') Architecture 
+          li.main-list__item(data-category='Art & Fashion ')
+            a(href='#') Art &amp; Fashion 
+          li.main-list__item(data-category='Biography')
+            a(href='#') Biography 
+          li.main-list__item(data-category='Business')
+            a(href='#') Business 
+          li.main-list__item(data-category='Crafts & Hobbies')
+            a(href='#') Crafts &amp; Hobbies 
+          li.main-list__item(data-category='Drama')
+            a(href='#') Drama 
+          li.main-list__item(data-category='Fiction')
+            a(href='#') Fiction 
+          li.main-list__item(data-category='Food & Drink')
+            a(href='#') Food &amp; Drink 
+          li.main-list__item(data-category='Health & Wellbeing')
+            a(href='#') Health &amp; Wellbeing 
+          li.main-list__item(data-category='History & Politics ')
+            a(href='#') History &amp; Politics 
+          li.main-list__item(data-category='Humor ')
+            a(href='#') Humor 
+          li.main-list__item(data-category='Poetry')
+            a(href='#') Poetry 
+          li.main-list__item(data-category='Psychology')
+            a(href='#') Psychology 
+          li.main-list__item(data-category='Science')
+            a(href='#') Science 
+          li.main-list__item(data-category='Technology')
+            a(href='#') Technology 
+          li.main-list__item(data-category='Travel & Maps')
+            a(href='#') Travel &amp; Maps 
+    .cards-block
+footer
+  .button-container
+    button.button-container__load LOAD MORE
